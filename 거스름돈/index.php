@@ -1,8 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
- 
-class Ex1 extends CI_Controller {
-     
+class Ex1 extends CI_Controller { 
     public function __construct() {
         parent::__construct();
     }
@@ -27,7 +25,6 @@ class Ex1 extends CI_Controller {
 			$change=($change % $coin[$i]);
 		}
 	}
- 
 }
 
 //VIEW페이지
