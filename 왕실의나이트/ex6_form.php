@@ -18,7 +18,7 @@ if($action == 'form_submit') {
 		$NextRow = $X + $dx[$i];
 		$NextColumn = $Y +$dy[$i];
 		
-		if($NextRow >= 1 && $NextRow <= 8 && $NextColumn >= 1 && $NextColumn <=8)
+		if($NextRow >= 1 && $NextRow <= 8 && $NextColumn >= 1 && $NextColumn <=8) // 8x8안에 있을 
 		{
 			$count += 1;
 		}
