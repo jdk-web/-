@@ -6,8 +6,7 @@ if(isset($_POST['action']))$action = $_POST['action'];
 
 if($action == 'form_submit') {
 	$X=$_POST['X']; //X 출력
-	//$Y=$_POST['Y']; //Y 출력
-	$Y=(int)ord($_POST['Y'])-(int)ord('a')+1;
+	$Y=(int)ord($_POST['Y'])-(int)ord('a')+1; // 문자열을 아스키 코드로 
 
 	echo "X좌표 : " . $X;
 	echo "Y좌표 : " . $Y; echo "<br>";
@@ -24,7 +23,7 @@ if($action == 'form_submit') {
 			$count += 1;
 		}
 	}
-	echo $count;
+	echo $count; //경우의 수 출력
 	
   exit;
 }
