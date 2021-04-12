@@ -15,7 +15,7 @@ if($action == 'form_submit') {
 		
 		echo $MIN=MIN($A); //최소값 가져오기
 		echo $MAX=MAX($B); //최대값 가져오기
-		if($MAX > $MIN) // 
+		if($MAX > $MIN) // 각 배열을 비교하고 원소 교체
 		{ 
 			$tmp1=array_search($MIN, $A);
 			$tmp2=array_search($MAX, $B);
@@ -25,9 +25,7 @@ if($action == 'form_submit') {
 		}
 		$i++;
 	}
-	
-	print_r($A);
-	print_r($B);
+
 	echo array_sum($A);
 
   exit;
@@ -36,8 +34,8 @@ if($action == 'form_submit') {
 <form method="post" action="<?=$_SERVER['PHP_SELF']?>">
   <input type="hidden" name="action" value="form_submit" />
    K : <input type="text" name="K">
-   A : <input type="text" name="Array_A">
-   B : <input type="text" name="Array_B">
+   A : <input type="text" name="Array_A"> <!--A배열 원소 입력-->
+   B : <input type="text" name="Array_B"> <!--배열 원소 입력-->
 
   <input type="submit" value="제출하기" />
 </form>
