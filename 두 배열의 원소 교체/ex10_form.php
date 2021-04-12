@@ -4,8 +4,8 @@ if(isset($_POST['action']))$action = $_POST['action'];
 if($action == 'form_submit') {
 
 	$K = $this->input->post('K');
-	$Array_A = $this->input->post('Array_A'); $A = explode(" ",$Array_A);
-	$Array_B = $this->input->post('Array_B'); $B = explode(" ",$Array_B);
+	$Array_A = $this->input->post('Array_A'); $A = explode(" ",$Array_A); // A 배열 공백으로 구분
+	$Array_B = $this->input->post('Array_B'); $B = explode(" ",$Array_B); // B 배열 공백으로 구분
 	
 	$i=1;
 	$tmp=null;
@@ -13,9 +13,9 @@ if($action == 'form_submit') {
 	while($i<=$K)
 	{
 		
-		echo $MIN=MIN($A);
-		echo $MAX=MAX($B);
-		if($MAX > $MIN)
+		echo $MIN=MIN($A); //최소값 가져오기
+		echo $MAX=MAX($B); //최대값 가져오기
+		if($MAX > $MIN) // 
 		{ 
 			$tmp1=array_search($MIN, $A);
 			$tmp2=array_search($MAX, $B);
