@@ -35,7 +35,7 @@ if($action == 'form_submit') {
   <input type="hidden" name="action" value="form_submit" />
    K : <input type="text" name="K">
    A : <input type="text" name="Array_A"> <!--A배열 원소 입력-->
-   B : <input type="text" name="Array_B"> <!--배열 원소 입력-->
+   B : <input type="text" name="Array_B"> <!--B배열 원소 입력-->
 
   <input type="submit" value="제출하기" />
 </form>
