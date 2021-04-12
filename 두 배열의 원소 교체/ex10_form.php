@@ -26,7 +26,7 @@ if($action == 'form_submit') {
 		$i++;
 	}
 
-	echo array_sum($A);
+	echo array_sum($A); //최종 
 
   exit;
 }
