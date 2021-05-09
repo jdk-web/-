@@ -7,7 +7,7 @@ if($action == 'form_submit') {
 		return fibo($n-1) + fibo($n-2);
 	}
 
-	$n = $this->input->post('n'); // 요청한 떡의 길이
+	$n = $this->input->post('n');
 
 	echo fibo($n);
 	
