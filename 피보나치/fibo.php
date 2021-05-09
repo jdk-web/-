@@ -24,3 +24,20 @@ if($action == 'form_submit') {
 
   <input type="submit" value="제출하기" />
 </form>
+
+
+// 메모 버전
+$memo = array();
+function fibo($n) {
+  global $memo;
+  if(array_key_exists($n, $memo)) {
+    return $memo[$n];
+  }
+  else {
+    if($n > 1) {
+      $result = fibo($n-1) + fibo($n-2);
+      $memo[$n] = $result;
+      return $result;
+    }
+    return $n;
+  }
